@@ -1,0 +1,3 @@
+What are "getters and setters"?
+ - The standard way to provide access to data in Java classes.
+ - getters and setters allow for an object to contain variables which can be accessed and changed with restrictions.
