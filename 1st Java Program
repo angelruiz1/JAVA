@@ -1,0 +1,78 @@
+********************************
+Creating Your first Java program
+********************************
+
+
+
+* Filename should be what the class name is. 
+   - Class Name is Helloworld
+  
+  ***
+  public class HelloWorld {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+    } // end of main funtion scope 
+  } //end of class HelloWorld scope
+  ***
+
+
+* Every Java program should have this line to be able to run:
+      public static void main(String[] args) {
+      
+
+public - meaning that the method can be called from anywhere and from outside the program as well. 
+static - meaning it exists and can be run by itself(at the class level without creating an object)
+void - meaning it returns no value. 
+
+
+
+Object oriented paradigm with a football team with one member. 
+
+//define the team class. 
+public class Team {
+  Member member;
+  public Team(Member member) { //who is in the team?
+      this.member = member; // one 'member' is in this team 
+  } // end of funtion Team scope
+  
+  //main method
+  public static void main(String[] args) {
+    Member myMember = new Member("Auriel", "light", 10, 1);
+    Team myTeam = new Team(myMember);
+    System.out.println(myTeam.member.getName());
+    System.out.println(myTeam.member.getType());
+    System.out.println(myTeam.member.getLevel());
+    System.out.println(myTeam.member.getRank());
+  }
+
+} //end of class Team scope
+
+
+//define the Member Class
+class Member {
+  private String name;
+  private String type;
+  private int level; //int data type
+  private int rank;
+  
+  public Member(String name, String type, int level, int rank) {
+      this.name = name;
+      this.type = type;
+      this.level = level;
+      this.rank = rank;
+  }
+  
+  //define the getter functions
+  public String getName() {
+      return this.name; 
+  }
+    public String getType() {
+      return this.name; 
+  }
+    public String getLevel() {
+      return this.name; 
+  }
+    public String getRank() {
+      return this.name; 
+  }
+}
